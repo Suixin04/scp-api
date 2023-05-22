@@ -7,13 +7,33 @@ Clone this repo and `cd` to the cloned directory. Then run:
 npm i
 node server.js
 ```
+### Endpoints
+Only available (currently) is the GET method to the `/scp/:id` endpoint. `id` is an integer. 0-9 starts with '00', 10-99 starts wtih '0'
 
-### Schema 
+### Database Schema:
+```json
+"100": {
+    "id": "SCP-100",
+    "class": "...",
+    "containment": "...",
+    "description": "...",
+    "more_info": {},
+}, 
+"101": {
+    "id": "SCP-101",
+    "class": "...",
+    "containment": "...",
+    "description": "...",
+    "more_info": {},
+},
+```
+
+### Return Schema: 
 (from the repo mentioned above)
 ```json
 {
     "id": "str",
-    "class:" "str",
+    "class": "str",
     "containment": "str",
     "description": "str",
     "more_info": "json"
@@ -23,7 +43,7 @@ e.g.
 ```json
 {
     "id": "SCP-343",
-    "class:" "Safe",
+    "class": "Safe",
     "containment": "SCP-343 resides in a 6.1m by 6.1m (20 ft by..."
     "description": "CP-343 is a male, seemingly race-less, humanoid in...",
     "more_info": {
