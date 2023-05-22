@@ -1,6 +1,13 @@
 # SCP Foundation Unofficial API
 To be used with data from the [SCP Foundation WebScraper](https://github.com/rakhadjo/scp-scraper) also by me.
 
+### Get Started
+Clone this repo and `cd` to the cloned directory. Then run:
+```sh
+npm i
+node server.js
+```
+
 ### Schema 
 (from the repo mentioned above)
 ```json
